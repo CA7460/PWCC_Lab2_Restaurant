@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Resto chez Serge</title>
+</head>
+
+<body onload="populateMenu()">
+    <header>
+        <h4>Menu</h4>
+        <h2>Resto chez Serge</h2>
+        <h4>Travail pratique<br/>par Saukin Siarhei</h4>
+    </header>
+    <div class="video-bg">
+        <video src="media/video/Cafe.mp4" loop autoplay muted></video>
+    </div>
+    <div id="clientBoard">
+        <h3>Faites votre choix:</h3>
+        
+            <div id="forms">
+                <form id="entreeForm">
+                    <div>
+                        <label for="entree">Entrées</label>
+                        <select id="entree"  onchange="calculate(this)"></select>
+                        <img id="entreeImg" src="media/images/entree/entree.jpg" alt="">
+                        <span class="prix" id="entreePrix">0.00</span>
+                    </div>
+                </form>
+                <form id="repasForm" >
+                    <div>
+                        <label for="repas">Repas</label>
+                        <select id="repas" onchange="calculate(this)"></select>
+                        <img id="repasImg" src="media/images/repas/repas.jpg" alt="">
+                        <span class="prix" id="repasPrix">0.00</span>
+                    </div>
+                </form>
+            </div>
+        
+        <p id="total"></p>
+    </div>
+    <footer>
+        <h1>Bon Appetit</h1>
+    </footer>
+</body>
+
+</html>
