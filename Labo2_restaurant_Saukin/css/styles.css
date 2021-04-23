@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: red;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 6vh;
+    text-align: center;
+    /* border: solid 2px yellow; */
+}
+
+h2 {
+    font-size: 5vh;
+}
+
+h3 {
+    font-size: 4vh;
+}
+
+h4 {
+    width:15%;
+    font-size: 2vh;
+}
+
+header, footer {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+
+#clientBoard {
+    height: 50%;
+    width: 80%;
+    border: double 6px white;
+    background-color: rgba(143, 145, 138, 0.6);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#clientBoard {
+    color: white;
+    text-shadow: 2px 2px #000000,
+                 3px 2px #ec0d0d   ;
+}
+
+label, p, span {
+    font-size: 3vh;
+}
+
+#forms {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    padding-left: 3%;
+    justify-content: space-around;
+    /* border: solid 6px green; */
+}
+
+footer {
+    justify-content: center;
+}
+
+.video-bg {
+    position: absolute;
+    top: 15%;
+    height: 70%;
+    min-width: 100%;
+    z-index: -10;
+    overflow: hidden;
+    
+}
+
+video {
+    /* min-height: 100%; */
+    width: 100%;
+    animation: fadeIn linear 6s;
+    
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
